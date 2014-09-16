@@ -19,7 +19,7 @@ public class asn2_5 {
 	   */
 	public static String a;
 	public static void main(String[] args) throws IOException {
-		Scanner scanner = new Scanner(new File("/Users/Harshitha/popu.csv")); //Reads from the .csv file 
+		Scanner scanner = new Scanner(new File("/Users/Harshitha/popu1.csv")); //Reads from the .csv file 
         scanner.useDelimiter(",|\n"); //scans for a delimiter
         File StockOutputFile = new File("C://Users/Harshitha/output.txt"); //Creating an instance of the output file
         FileOutputStream fos = new FileOutputStream(StockOutputFile);
@@ -27,7 +27,7 @@ public class asn2_5 {
         //Prints the contents to the new file till the end of file is reached 
         while(scanner.hasNextLine()){
         	      	
-            printStream.print("The capital of  "+scanner.next()+" is "+scanner.next()+" with the population of  "+scanner.next()+"\n");
+            printStream.print("The capital of  "+scanner.next()+" is "+scanner.next()+" with the population of  "+scanner.next()+" and the language spoken is "+scanner.next()+".\n");
         }
         scanner.close();
         log.logging("-l");//Calling the log class
